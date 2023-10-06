@@ -1,0 +1,24 @@
+
+.list{
+    width: 90%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.list li{
+    background-color: #401C2A;
+    width:395px;
+    height: 457px;
+    border-radius: 10px;
+}
+body{
+    background-color: #CFB698;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
