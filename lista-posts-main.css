@@ -5,15 +5,99 @@
     display: flex;
     list-style: none;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1336px;
     gap: 50px;
 }
 .list li{
     background-color: #401C2A;
-    width:395px;
+    width:375px;
     height: 457px;
     border-radius: 10px;
+    flex-shrink: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+.li-top{
+    height: 100%;
+    height: 236px;
+
+    border-radius: 8px 8px 0px 0px;
+    border: 0px solid rgba(38, 34, 36, 0.30);
+    background: url(ada.svg), lightgray 0px -59px / 100% 230% no-repeat;
+
+    flex-shrink: 0;
+    display: block;
+}
+.li-top p{
+    position: relative;
+    top: calc(80% - 14px);
+    left: 13px;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Cinzel;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.li-bottom{
+    width: 395px;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.li-bottom p{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 344px;
+    font-family: Cinzel;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+.li-bottom-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 13px;
+
+}
+.li-bottom-div button{
+    width: auto;
+    height: 38px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 4px;
+    background: #CFB698;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: #401C2A;
+    font-family: Cinzel;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
 }
 body{
     background-color: #CFB698;
@@ -21,4 +105,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: Cinzel;
+    font-style: normal;
+    line-height: normal;
 }
+
+ .search{
+    color: #401C2A;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Manjari;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+    margin-left: 60px;
+ }
